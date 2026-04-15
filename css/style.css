@@ -16,11 +16,19 @@ body {
     background-color:#f5f5f5;
 }
 
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+}
+
 .container {
     width: 1160px;
     margin: 0 auto;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 header {
     background-color: #17abb3;
@@ -82,5 +90,137 @@ header {
 .content h1,
 .content h2 {
     margin: 0;
+}
+
+/* aside */ 
+.layout {
+    display: flex;
+    align-items: stretch;
+}
+
+aside {
+    width: 30%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.content-main {
+    width: 70%;
+}
+
+.aside {
+    background-color: #e3e3e3;
+}
+
+/* TITRES */
+.section-title {
+    color: #17abb3;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+/* Ajustements spécifiques */
+.section-title.languages {
+    margin-top: 32px;
+}
+
+.section-title.qualities-title {
+    margin-top: 65px;
+    margin-bottom: 15px;
+}
+
+.section-title.interests {
+    margin-top: 30px; 
+    margin-bottom: 15px;
+}
+
+/* Gestion étoiles et compétences */
+
+.stars i {
+    color: #17abb3;
+    font-size: 14px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1;
+}
+
+.skill p {
+    margin: 0;
+    margin-left: 50px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.stars {
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+    gap: 2px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Gestion des langues */
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+}
+
+.language span:first-child {
+    margin-left: 50px;
+    font-weight: 600;
+}
+
+.language span:last-child {
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+/* Qualités */
+
+.qualities li {
+    margin-left: 65px;
+    position: relative;
+}
+
+.qualities {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.qualities li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #17abb3;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
