@@ -66,13 +66,18 @@ header {
 
 }
 
+a {
+    text-decoration: none;
+    color: inherit
+}
+
 .content h1 {
     font-size: 3.5rem;
 }
 
 .infos {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     align-items: flex-start;
     text-align: left;
     margin-top: 20px;
@@ -83,16 +88,18 @@ header {
 .col {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 12px;
+    text-decoration: none;
 }
 
 .col p {
-    margin: 5px;
+    margin: 0px;
 }
 
 .content h1,
 .content h2 {
     margin: 0;
+    margin-left: 12px;
 }
 
 /* aside */
@@ -113,7 +120,7 @@ aside {
 }
 
 .aside {
-    background-color: #e3e3e3;
+    background-color: rgba(227, 227, 227, 0.4);
 }
 
 /* TITRES */
@@ -146,7 +153,7 @@ aside {
 
 .stars i {
     color: #17abb3;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 .skill {
@@ -327,18 +334,18 @@ aside {
 
 
 .socials i {
-    font-size: 22px;
+    font-size: 1.3rem;
     color: #17abb3;
 }
 
 
 .socials a.github {
-    background-color: #17abb3; 
-    border-radius: 50%;       
+    background-color: #17abb3;
+    border-radius: 50%;
 }
 
 .socials a.github i {
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .socials a.linkedin {
@@ -346,16 +353,32 @@ aside {
 }
 
 .socials a.linkedin i {
-    color: #ffffff; /
+    color: #ffffff;/
 }
 
 .socials a.instagram {
     width: 25px;
     height: 25px;
 }
+
 small {
     color: #ffffff;
     font-style: italic;
     font-size: 0.8rem;
 }
 
+/* Survol */
+
+.header img {
+    cursor: zoom-in;
+}
+
+.item:hover {
+    background-color: #f5f5f5;
+    border-left: 4px solid #17abb3;
+    padding-left: 10px;
+}
+
+.socials a:hover {
+    opacity: 0.7;
+}
